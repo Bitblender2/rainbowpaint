@@ -3,18 +3,28 @@ import Btn from "./Btn";
 
 function Navbar() {
   return (
-    <div className="w-full">
-      <header className="w-full flex items-center justify-between bg-white shadow-[rgba(0,0,0,0.24)_0px_3px_8px] px-[30px] py-0;">
+    <div className="Navbar ">
+      <header>
         <div className="logo">
-          <img src={logo} alt="logo" className="w-[200px]" />
+          <img src={logo} alt="logo" />
         </div>
         <nav>
-          <ul className="flex items-center gap-[30px] text-[1.2rem] text-[#2e1065] font-medium">
-            <li>Home</li>
-            <li>Products</li>
-            <li>About</li>
-            <li>Color</li>
-            <li>Media</li>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/products">Products</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/color">Color</a>
+            </li>
+            <li>
+              <a href="/media">Media</a>
+            </li>
           </ul>
         </nav>
         <div className="flex items-center gap-[30px]">

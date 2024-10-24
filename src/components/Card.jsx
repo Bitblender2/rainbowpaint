@@ -1,16 +1,22 @@
-"use client";
-import Card from "flowbite-react";
+import "boxicons";
+import image from "./assets/fading-384x250.jpg";
 
-export function Component() {
+function Card() {
   return (
-    <Card className="max-w-sm">
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
-      </p>
-    </Card>
+    <div className="card">
+      <div className="card-img">
+        <img src={image} alt="mapped" />
+      </div>
+      <div className="card-body">
+        <h2>Card Title</h2>
+        <p>Card Description</p>
+      </div>
+      <div className="learn-more">
+        <a href="/learn-more">Learn more</a>
+        <box-icon name="right-arrow-alt"></box-icon>
+      </div>
+    </div>
   );
 }
+
+export default Card;

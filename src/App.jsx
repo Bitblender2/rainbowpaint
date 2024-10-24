@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Sider from "./components/Sider";
 import Tips from "./components/Tips";
 import Footer from "./components/Footer";
+import "boxicons";
 
 function App() {
   return (

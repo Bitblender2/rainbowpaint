@@ -80,7 +80,8 @@
 }
 .email input {
   margin: 0;
-  background-color: #2e1065;
+  background-color: #1e40af;
+  color: #ffff;
   border: #ffff solid 1px;
 }
 .sub {
@@ -88,7 +89,7 @@
   justify-content: center;
   align-items: center;
   height: 44px;
-  color: #2e1065;
+  color: #1e40af;
   border: none;
   background-color: #ffff;
 }

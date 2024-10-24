@@ -3,11 +3,13 @@ import React, { useState, useEffect } from "react";
 import Banner2 from "../assets/RP_Web_Banner-2.png";
 import Banner3 from "../assets/RP_Web_Banner-3.png";
 import Banner4 from "../assets/RP_Web_Banner-4.png";
+import Banner5 from "../assets/RP_Web_Banner-5.png";
+import Banner6 from "../assets/RP_Web_Banner-7.png";
 import "./Landing.css";
 
 function Landing() {
   // Importing images into the array
-  const images = [Banner2, Banner3, Banner4];
+  const images = [Banner2, Banner3, Banner4, Banner5, Banner6];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {

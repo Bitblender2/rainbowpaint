@@ -1,0 +1,84 @@
+.Home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-size: cover;
+  background-position: "center";
+}
+.Home h1 {
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #ffff;
+  color: #2e1065;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Setting the size of the upper layer to 80% of the screen size*/
+  height: 40vh;
+  width: 40vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+
+  /*the alpha value controls the transparency*/
+  background: rgba(255, 255, 255, 0.3);
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /* Adding our borders*/
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 4;
+}
+
+@media (max-width: 500px) {
+  .Home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    background-size: cover;
+    background-position: "center";
+  }
+  .Home h1 {
+    font-weight: 600;
+  }
+  .btn:hover {
+    background-color: #ffff;
+    color: #2e1065;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 30dvh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    /* background: rgba(255, 255, 255, 0.3); */
+    backdrop-filter: blur(0px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18); */
+    border-radius: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    z-index: 1;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+}

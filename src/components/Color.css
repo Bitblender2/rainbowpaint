@@ -1,0 +1,93 @@
+.Color {
+  padding: 20px 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.color-year {
+  width: 40%;
+  height: 60dvh;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  background-image: url("../assets/gallery1.jpg");
+  background-size: cover;
+}
+.palette {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #ffff;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.palete-color {
+  width: 100%;
+  height: 50%;
+  background-color: #1e40af;
+}
+.palete-desc {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.color-desc {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.color-desc h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1e40af;
+}
+.color-desc p {
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .Color {
+    padding: 20px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .color-year {
+    width: 100%;
+    height: 60dvh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    background-image: url("../assets/gallery1.jpg");
+    background-size: cover;
+  }
+  .color-desc {
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .color-desc h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e40af;
+  }
+  .color-desc p {
+    font-size: 16px;
+    text-align: center;
+  }
+}

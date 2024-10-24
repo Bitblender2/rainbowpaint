@@ -1,0 +1,145 @@
+.footer {
+  color: #ffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e40af;
+  background-image: url("../assets/gallery1.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 40px 30px;
+}
+.footer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.upper {
+  width: 80%;
+  padding: 10px 20px;
+  align-items: start;
+  gap: 40px;
+  justify-content: center;
+  display: flex;
+}
+.snap {
+  width: 25%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials box-icon:hover {
+  transform: scale(1.5);
+  padding: 0;
+}
+.imp-links {
+  width: 20%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Cont {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsletter {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.newsletter .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.email {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.email input {
+  margin: 0;
+  background-color: #2e1065;
+  border: #ffff solid 1px;
+}
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  color: #2e1065;
+  border: none;
+  background-color: #ffff;
+}
+.rights {
+  width: 80%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-top: #ffff solid 1px;
+}
+@media (max-width: 500px) {
+  .upper {
+    width: 80%;
+    padding: 10px 20px;
+    align-items: start;
+    gap: 40px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  .snap {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .imp-links {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .Cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -1,13 +1,15 @@
+import Btn from "./Btn";
 import Card from "./Card";
+import "./Tips.css";
 function Tips() {
   return (
     <div className="tips">
-      <h3>Tips Of Doing It Right</h3>
+      <h3>PAINTING TIPS</h3>
+      <p>Do it the right way</p>
       <div className="Cards">
         <Card />
-        <Card />
-        <Card />
       </div>
+      <Btn btn="View More" />
     </div>
   );
 }

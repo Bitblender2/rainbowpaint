@@ -14,33 +14,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-.Navbar {
-  width: 100%;
-}
-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  background-color: #ffff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.logo img {
-  width: 200px;
-}
-
-nav ul {
-  display: flex;
-  font-size: 18px;
-  gap: 20px;
-  font-weight: 500;
-  list-style: none;
-}
-
-.buttons {
+.dropdown-buttons {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -55,94 +29,48 @@ button {
 .btn {
   border: none;
   border-radius: 10px;
-  background-color: #2e1065;
+  background-color: #1e40af;
   color: #ffff;
 }
 
 button:hover {
   background-color: #ffff;
-  color: #2e1065;
-  border: solid 1px #2e1065;
+  color: #1e40af;
+  border: solid 1px #1e40af;
 }
-.Home {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 90vh;
-  background-image: url("../public/RP_Web_Banner-5.png");
-  background-size: cover;
-}
-.Home h1 {
-  font-weight: 600;
-}
-.btn:hover {
-  background-color: #ffff;
-  color: #2e1065;
-}
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-.floting {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-  gap: 10px;
-}
-.circle {
-  cursor: pointer;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ffff;
-}
-.heading {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  /* Setting the size of the upper layer to 80% of the screen size*/
-  height: 40vh;
-  width: 40vw;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
+  button {
+    width: 150px;
+    padding: 10px 0;
+    background-color: #ffff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .btn {
+    border: none;
+    border-radius: 10px;
+    background-color: #1e40af;
+    color: #ffff;
+  }
 
-  /*the alpha value controls the transparency*/
-  background: rgba(255, 255, 255, 0.3);
-
-  /* This controls the blurring effect*/
-  backdrop-filter: blur(7.5px);
-  -webkit-backdrop-filter: blur(7.5px);
-
-  /*Adding the shadow*/
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
-
-  /* Adding our borders*/
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  z-index: 4;
-}
-.Cards {
-  width: 100%;
-  height: 100dv;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tips {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-}
-.tips h3 {
-  margin-top: 20px;
-  color: #2e1065;
-  font-size: 3rem;
-  font-weight: 900;
+  button:hover {
+    background-color: #ffff;
+    color: #1e40af;
+    border: solid 1px #1e40af;
+  }
+  .dropdown-buttons {
+    padding: 10px 29px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
 }

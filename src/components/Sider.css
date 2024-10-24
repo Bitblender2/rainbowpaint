@@ -1,0 +1,32 @@
+.sider {
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 70px 80px;
+  display: flex;
+  justify-content: center;
+}
+.description {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 80px;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .sider {
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+  }
+}

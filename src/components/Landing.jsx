@@ -8,19 +8,16 @@ import Banner6 from "../assets/RP_Web_Banner-7.png";
 import "./Landing.css";
 
 function Landing() {
-  // Importing images into the array
   const images = [Banner2, Banner3, Banner4, Banner5, Banner6];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    // Set an interval to change the image every 3 seconds
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // 3 seconds
+    }, 5000);
 
-    // Clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, [images.length]);
 

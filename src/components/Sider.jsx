@@ -12,7 +12,7 @@ function Description() {
     <div className="description">
       <p>
         Little Greene is an eco-friendly, family-run business cataloguing 300
-        years of paint and wallpaper. Based in the UK.
+        years of paint and wallpaper. Based in the Malawi.
       </p>
     </div>
   );
